@@ -42,11 +42,9 @@ if ((month==11 && day>=22) || (month==12 && day<=21)){
 return signoZodiacal;
 } 
 
-console.log(zodiac(20,8));
-
 // RETO 4
 
-function isEven(num:number){
+export function isEven(num:number){
 
 if ((num%2) == 0){
     console.log ("El numero es par");
@@ -54,5 +52,3 @@ if ((num%2) == 0){
 else console.log ("El numero es impar");
 
 }
-
-isEven (5);

@@ -1,4 +1,7 @@
+"use strict";
 //RETOS 1 Y 2
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isEven = isEven;
 function zodiac(day, month) {
     var signoZodiacal = "";
     if ((month == 12 && day >= 22) || (month == 1 && day <= 19)) {
@@ -39,7 +42,6 @@ function zodiac(day, month) {
     }
     return signoZodiacal;
 }
-console.log(zodiac(20, 8));
 // RETO 4
 function isEven(num) {
     if ((num % 2) == 0) {
@@ -48,4 +50,3 @@ function isEven(num) {
     else
         console.log("El numero es impar");
 }
-isEven(5);

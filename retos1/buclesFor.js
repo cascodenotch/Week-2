@@ -1,7 +1,10 @@
+"use strict";
 // RETO 3
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.add = add;
 function myRevert(myArr) {
     var arrayRevertido = [];
-    for (var i = myArr.length - 1; i > 0; i--) {
+    for (var i = myArr.length - 1; i >= 0; i--) {
         arrayRevertido.push(myArr[i]);
     }
     return arrayRevertido;
@@ -14,6 +17,3 @@ function add(myWords) {
     }
     return sumaCaracteres;
 }
-var array1 = ["a", "b", "c"];
-console.log(add(array1));
-console.log(myRevert(array1));
