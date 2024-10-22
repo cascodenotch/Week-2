@@ -29,6 +29,23 @@ var Point = /** @class */ (function () {
         var distancia = Math.sqrt(Math.pow((this.x - anotherPoint.getX()), 2) + Math.pow((this.y - anotherPoint.getY()), 2));
         return distancia;
     };
+    Point.prototype.calculateQuadrant = function () {
+        if (this.x == 0 || this.y == 0) {
+            return 0;
+        }
+        else if (this.x > 0 && this.y > 0) {
+            return 1;
+        }
+        else if (this.x < 0 && this.y > 0) {
+            return 2;
+        }
+        else if (this.x < 0 && this.y < 0) {
+            return 3;
+        }
+        else if (this.x > 0 && this.y < 0) {
+            return 4;
+        }
+    };
     return Point;
 }());
 exports.Point = Point;

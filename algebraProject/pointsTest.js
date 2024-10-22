@@ -7,6 +7,7 @@ coordenada.setY(5);
 console.log(coordenada.getX());
 console.log(coordenada.getY());
 console.log(coordenada.toString());
-var coordenada2 = new points_1.Point(2, 10);
+var coordenada2 = new points_1.Point(2, -10);
 console.log(coordenada.distanceToOrigin());
 console.log(coordenada.calculateDistance(coordenada2));
+console.log(coordenada2.calculateQuadrant());
