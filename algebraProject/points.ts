@@ -29,4 +29,15 @@ export class Point {
 
     }
 
+    distanceToOrigin():number{
+        let distancia =  Math.sqrt((this.x - 0)**2 + (this.y - 0)**2)
+        return distancia;
+    }
+
+    calculateDistance(anotherPoint:Point):number{
+        let distancia = Math.sqrt((this.x - anotherPoint.getX())**2 + (this.y - anotherPoint.getY())**2)
+        return distancia;
+    }
+
+
 }
